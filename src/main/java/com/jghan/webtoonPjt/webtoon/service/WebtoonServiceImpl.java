@@ -36,7 +36,7 @@ public class WebtoonServiceImpl implements WebtoonService {
 
         // Wait for the content to load (you might need to adjust the time)
         try {
-            Thread.sleep(10000);
+            Thread.sleep(20000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -56,7 +56,9 @@ public class WebtoonServiceImpl implements WebtoonService {
                 String title = item.findElement(By.className("ContentTitle__title--e3qXt")).getText();
                 String author = item.findElement(By.className("ContentAuthor__author--CTAAP")).getText();
                 String rating = item.findElement(By.className("text")).getText();
-                String posterUrl = item.findElement(By.cssSelector("img.Poster__image--d9XTI")).getAttribute("src");
+                //String posterUrl = item.findElement(By.className("Poster__image--d9XTI")).getAttribute("src");
+                String posterUrl = item.findElement(By.cssSelector("img[class*='Poster__image--d9XTI']")).getAttribute("src");
+
 
                 // Print or process the extracted information as needed
                 System.out.println("Title: " + title);
