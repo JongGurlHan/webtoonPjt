@@ -14,19 +14,12 @@ public class Webtoon {
     private final String url;
     private final String img;
     private final Platform platform;
-
     private final UpdateDay updateDay;
-
     private final int rank;
-
     private final IsNew isNew;
-
     private final IsPublish isPublish;
-
     private final double rating;
-
     private final LocalDateTime createdDate;
-
     private final LocalDateTime lastModifiedDate;
 
     @Builder

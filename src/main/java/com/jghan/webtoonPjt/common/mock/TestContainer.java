@@ -1,8 +1,8 @@
-package com.jghan.webtoonPjt.common.mock;//package com.jghan.museumProject.common.mock;
+package com.jghan.webtoonPjt.common.mock;//package com.jghan.webtoonPjt.common.mock;
 //
-//import com.jghan.museumProject.member.controller.MemberController;
-//import com.jghan.museumProject.member.service.MemberServiceImpl;
-//import com.jghan.museumProject.member.service.port.MemberRepository;
+//import com.jghan.webtoonPjt.member.controller.MemberController;
+//import com.jghan.webtoonPjt.member.service.MemberServiceImpl;
+//import com.jghan.webtoonPjt.member.service.port.MemberRepository;
 //import lombok.Builder;
 //
 //public class TestContainer {

@@ -1,6 +1,6 @@
 package com.jghan.webtoonPjt.member.infrastructure;
 
-import com.jghan.museumProject.member.domain.MemberStatus;
+import com.jghan.webtoonPjt.member.domain.MemberStatus;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

@@ -1,9 +1,9 @@
 package com.jghan.webtoonPjt.member.infrastructure;
 
-import com.jghan.museumProject.common.domain.BaseTimeEntity;
-import com.jghan.museumProject.member.domain.Member;
-import com.jghan.museumProject.member.domain.MemberRole;
-import com.jghan.museumProject.member.domain.MemberStatus;
+import com.jghan.webtoonPjt.common.domain.BaseTimeEntity;
+import com.jghan.webtoonPjt.member.domain.Member;
+import com.jghan.webtoonPjt.member.domain.MemberRole;
+import com.jghan.webtoonPjt.member.domain.MemberStatus;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;

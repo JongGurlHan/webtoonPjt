@@ -1,8 +1,8 @@
 package com.jghan.webtoonPjt.member.controller.response;
 
-import com.jghan.museumProject.member.domain.Member;
-import com.jghan.museumProject.member.domain.MemberRole;
-import com.jghan.museumProject.member.domain.MemberStatus;
+import com.jghan.webtoonPjt.member.domain.Member;
+import com.jghan.webtoonPjt.member.domain.MemberRole;
+import com.jghan.webtoonPjt.member.domain.MemberStatus;
 import lombok.Builder;
 import lombok.Getter;
 

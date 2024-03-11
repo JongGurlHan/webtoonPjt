@@ -1,7 +1,7 @@
 package com.jghan.webtoonPjt.member.controller;
 
 import com.jghan.webtoonPjt.member.controller.port.MemberService;
-import com.jghan.webtoonPjt.member.controller.response.member.controller.response.MemberResponse;
+import com.jghan.webtoonPjt.member.controller.response.MemberResponse;
 import lombok.Builder;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

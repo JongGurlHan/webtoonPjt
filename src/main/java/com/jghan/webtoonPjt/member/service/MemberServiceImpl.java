@@ -1,13 +1,13 @@
 package com.jghan.webtoonPjt.member.service;
 
 
-import com.jghan.museumProject.common.domain.exception.ResourceNotFoundException;
-import com.jghan.museumProject.member.controller.port.MemberService;
-import com.jghan.museumProject.member.domain.Member;
-import com.jghan.museumProject.member.domain.MemberCreate;
-import com.jghan.museumProject.member.domain.MemberStatus;
-import com.jghan.museumProject.member.domain.MemberUpdate;
-import com.jghan.museumProject.member.service.port.MemberRepository;
+import com.jghan.webtoonPjt.common.domain.exception.ResourceNotFoundException;
+import com.jghan.webtoonPjt.member.controller.port.MemberService;
+import com.jghan.webtoonPjt.member.domain.Member;
+import com.jghan.webtoonPjt.member.domain.MemberCreate;
+import com.jghan.webtoonPjt.member.domain.MemberStatus;
+import com.jghan.webtoonPjt.member.domain.MemberUpdate;
+import com.jghan.webtoonPjt.member.service.port.MemberRepository;
 import lombok.Builder;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

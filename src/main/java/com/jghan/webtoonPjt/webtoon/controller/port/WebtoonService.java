@@ -7,5 +7,5 @@ import java.io.IOException;
 
 public interface WebtoonService {
 
-    Webtoon create(WebtoonCreate webtoonCreate) throws IOException;
+    Webtoon create() throws IOException, InterruptedException;
 }

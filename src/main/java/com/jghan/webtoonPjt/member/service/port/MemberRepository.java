@@ -1,7 +1,7 @@
 package com.jghan.webtoonPjt.member.service.port;
 
-import com.jghan.museumProject.member.domain.Member;
-import com.jghan.museumProject.member.domain.MemberStatus;
+import com.jghan.webtoonPjt.member.domain.Member;
+import com.jghan.webtoonPjt.member.domain.MemberStatus;
 
 import java.util.Optional;
 
