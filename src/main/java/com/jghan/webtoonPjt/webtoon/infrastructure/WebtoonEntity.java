@@ -24,12 +24,16 @@ public class WebtoonEntity extends BaseTimeEntity {
     private String author;
     private String url;
     private String img;
+
+    @Enumerated(EnumType.STRING)
     private Platform platform;
 
+    @Enumerated(EnumType.STRING)
     private UpdateDay updateDay;
 
     private int rank;
 
+    @Enumerated(EnumType.STRING)
     private IsNew isNew;
 
     private double rating;

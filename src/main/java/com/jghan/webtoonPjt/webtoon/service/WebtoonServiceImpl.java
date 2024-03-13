@@ -29,14 +29,15 @@ public class WebtoonServiceImpl implements WebtoonService {
 
     @Transactional
     @Override
-    public Webtoon create() throws IOException, InterruptedException {
+    public Webtoon create(String day)  {
 
         System.setProperty("webdriver.chrome.driver", "chromedriver.exe"); // Set the path to your chromedriver executable
 
         WebDriver driver = new ChromeDriver();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));  // Use Duration
 
-        String targetUrl = "https://comic.naver.com/webtoon?tab=mon";
+
+        String targetUrl = "https://comic.naver.com/webtoon?tab="+day;
 
         driver.get(targetUrl);
 
@@ -66,9 +67,11 @@ public class WebtoonServiceImpl implements WebtoonService {
                         .url(url)
                         .img(posterUrl)
                         .platform(Platform.NAVER)
+                        .updateDay(UpdateDay.월요일)
+                        .rank(rank)
                         .isNew(IsNew.N)
-                        .rating(rating)
                         .isPublish(IsPublish.Y)
+                        .rating(rating)
                         .createdDate(LocalDateTime.now())
                         .lastModifiedDate(LocalDateTime.now())
                         .build();

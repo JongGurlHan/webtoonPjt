@@ -49,8 +49,8 @@ public class Webtoon {
                 .updateDay(webtoonCreate.getUpdateDay())
                 .rank(webtoonCreate.getRank())
                 .isNew(webtoonCreate.getIsNew())
-                .rating(webtoonCreate.getRating())
                 .isPublish(webtoonCreate.getIsPublish())
+                .rating(webtoonCreate.getRating())
                 .createdDate(webtoonCreate.getCreatedDate())
                 .lastModifiedDate(webtoonCreate.getLastModifiedDate())
                 .build();
