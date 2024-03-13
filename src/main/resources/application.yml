@@ -3,24 +3,24 @@ server:
 
 spring:
 
-#  datasource:
-#    driver-class-name: org.h2.Driver
-#    username: sa
-#    url: jdbc:h2:tcp://localhost/~/test
-#    password:
-#
-#  jpa:
-#    hibernate:
-#      ddl-auto: create
-#      #hbm2ddl.auto: update
-#    properties:
-#      hibernate:
-#        #        show_sql: true #sysout 으로 나옴
-#        format_sql: true
-#        default_batch_fetch_size: 100
-#
-#  logging:
-#    level:
-#      org.hibernate.SQL: debug #logger통해 나옴
-#      #쿼리 파라미터 보이게 한다 근데 지저분해서 p6spy를 추가, 공부할땐 도입하지만, 실서버에선 성능문제 불러올수도
-#      #org.hibernate.type: trace
+  datasource:
+    driver-class-name: org.h2.Driver
+    username: sa
+    url: jdbc:h2:tcp://localhost/~/test
+    password:
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+      #hbm2ddl.auto: update
+    properties:
+      hibernate:
+        #        show_sql: true #sysout 으로 나옴
+        format_sql: true
+        default_batch_fetch_size: 100
+
+  logging:
+    level:
+      org.hibernate.SQL: debug #logger통해 나옴
+      #쿼리 파라미터 보이게 한다 근데 지저분해서 p6spy를 추가, 공부할땐 도입하지만, 실서버에선 성능문제 불러올수도
+      #org.hibernate.type: trace

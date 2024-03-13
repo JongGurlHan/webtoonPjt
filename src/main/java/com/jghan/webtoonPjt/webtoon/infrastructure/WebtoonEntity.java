@@ -39,7 +39,7 @@ public class WebtoonEntity extends BaseTimeEntity {
         webtoonEntity.id = webtoon.getId();
         webtoonEntity.title = webtoon.getTitle();
         webtoonEntity.author = webtoon.getAuthor();
-        webtoonEntity.url = webtoon.getAuthor();
+        webtoonEntity.url = webtoon.getUrl();
         webtoonEntity.img = webtoon.getImg();
         webtoonEntity.platform = webtoon.getPlatform();
         webtoonEntity.updateDay = webtoon.getUpdateDay();
@@ -51,4 +51,22 @@ public class WebtoonEntity extends BaseTimeEntity {
         return webtoonEntity;
     }
 
+    public Webtoon toModel(){
+        return Webtoon.builder()
+                .id(id)
+                .title(title)
+                .author(author)
+                .url(url)
+                .img(img)
+                .platform(platform)
+                .updateDay(updateDay)
+                .rank(rank)
+                .isNew(isNew)
+                .rating(rating)
+                .createdDate(createdDate)
+                .lastModifiedDate(lastModifiedDate)
+                .build();
+    }
+
 }
+

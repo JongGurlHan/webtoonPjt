@@ -8,7 +8,6 @@ import java.time.LocalDateTime;
 @Getter
 public class WebtoonCreate {
 
-    private final Long id;
     private final String title;
     private final String author;
     private final String url;
@@ -30,8 +29,8 @@ public class WebtoonCreate {
     private final LocalDateTime lastModifiedDate;
 
     @Builder
-    public WebtoonCreate(Long id, String title, String author, String url, String img, Platform platform, UpdateDay updateDay, int rank, IsNew isNew, double rating, IsPublish isPublish, LocalDateTime createdDate, LocalDateTime lastModifiedDate) {
-        this.id = id;
+    public WebtoonCreate(String title, String author, String url, String img, Platform platform, UpdateDay updateDay, int rank, IsNew isNew, double rating, IsPublish isPublish, LocalDateTime createdDate, LocalDateTime lastModifiedDate) {
+
         this.title = title;
         this.author = author;
         this.url = url;
