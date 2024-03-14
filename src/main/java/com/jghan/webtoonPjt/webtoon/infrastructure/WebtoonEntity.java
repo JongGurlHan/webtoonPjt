@@ -3,10 +3,7 @@ package com.jghan.webtoonPjt.webtoon.infrastructure;
 import com.jghan.webtoonPjt.common.domain.BaseTimeEntity;
 import com.jghan.webtoonPjt.member.domain.Member;
 import com.jghan.webtoonPjt.member.infrastructure.MemberEntity;
-import com.jghan.webtoonPjt.webtoon.domain.IsNew;
-import com.jghan.webtoonPjt.webtoon.domain.Platform;
-import com.jghan.webtoonPjt.webtoon.domain.UpdateDay;
-import com.jghan.webtoonPjt.webtoon.domain.Webtoon;
+import com.jghan.webtoonPjt.webtoon.domain.*;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -36,6 +33,10 @@ public class WebtoonEntity extends BaseTimeEntity {
     @Enumerated(EnumType.STRING)
     private IsNew isNew;
 
+    @Enumerated(EnumType.STRING)
+    private IsPublish isPublish;
+
+
     private double rating;
 
     public static WebtoonEntity from(Webtoon webtoon){
@@ -50,6 +51,7 @@ public class WebtoonEntity extends BaseTimeEntity {
         webtoonEntity.rank = webtoon.getRank();
         webtoonEntity.isNew = webtoon.getIsNew();
         webtoonEntity.rating = webtoon.getRating();
+        webtoonEntity.isPublish = webtoon.getIsPublish();
         webtoonEntity.createdDate = webtoon.getCreatedDate();
         webtoonEntity.lastModifiedDate = webtoon.getLastModifiedDate();
         return webtoonEntity;
@@ -67,6 +69,7 @@ public class WebtoonEntity extends BaseTimeEntity {
                 .rank(rank)
                 .isNew(isNew)
                 .rating(rating)
+                .isPublish(isPublish)
                 .createdDate(createdDate)
                 .lastModifiedDate(lastModifiedDate)
                 .build();
