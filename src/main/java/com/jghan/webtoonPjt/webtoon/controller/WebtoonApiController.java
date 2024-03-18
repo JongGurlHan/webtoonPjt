@@ -22,6 +22,11 @@ public class WebtoonApiController {
 
     private final WebtoonService webtoonService;
 
+    @GetMapping("/test")
+    public String test(){
+        return "hello";
+    }
+
     @GetMapping
     public Page<WebtoonResponse> search(WebtoonSearchCondition condition, Pageable pageable){
         return webtoonService.search(condition, pageable);

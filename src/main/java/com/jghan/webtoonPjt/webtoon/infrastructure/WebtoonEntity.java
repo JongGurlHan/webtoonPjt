@@ -1,8 +1,6 @@
 package com.jghan.webtoonPjt.webtoon.infrastructure;
 
 import com.jghan.webtoonPjt.common.domain.BaseTimeEntity;
-import com.jghan.webtoonPjt.member.domain.Member;
-import com.jghan.webtoonPjt.member.infrastructure.MemberEntity;
 import com.jghan.webtoonPjt.webtoon.domain.*;
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -28,6 +26,7 @@ public class WebtoonEntity extends BaseTimeEntity {
     @Enumerated(EnumType.STRING)
     private UpdateDay updateDay;
 
+    @Column(name = "webtoon_rank")
     private int rank;
 
     @Enumerated(EnumType.STRING)
